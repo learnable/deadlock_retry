@@ -89,4 +89,4 @@ module DeadlockRetry
 
 end
 
-ActiveRecord::ConnectionAdapters::MysqlAdapter.send(:include, DeadlockRetry)
+ActiveRecord::ConnectionAdapters::Mysql2Adapter.send(:include, DeadlockRetry)
